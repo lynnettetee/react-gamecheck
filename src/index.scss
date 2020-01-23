@@ -1,0 +1,291 @@
+/*
+Accreditation: 
+1. star rating widget: Modified from https://codepen.io/jamesbarnett/pen/vlpkh, by user James Barnett
+*/
+
+//initialize variables 
+$page-color: #24252A;
+$global-font-color: white;
+$navbar-color: #313957;
+$link-hover-color: #A0D9D2;
+$global-font: 14px 'Futura', sans-serif;
+$comp-title-font: bold 20px 'Futura', sans-serif;
+$comp-subtitle1-font: bold 18px 'Futura', sans-serif;
+$filter-item-font: 16px 'Futura', sans-serif;
+
+//general
+* {
+  box-sizing: border-box;
+}
+
+body{
+  font: $global-font;
+  color: $global-font-color;
+  margin: 20px;
+  background-color: $page-color;
+}
+
+a {
+  color: $global-font-color;
+  text-decoration: none;
+}
+
+img {
+  border-radius: 10px;
+}
+
+.comp-title{
+  font: $comp-title-font;
+  margin: 10px 0;
+}
+
+.comp-subtitle1{
+  font: $comp-subtitle1-font;
+}
+//^general
+
+//nav bar
+.nav-links{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  background-color: $navbar-color;
+  padding: 5px;
+  margin: 10px;
+
+  li {
+    display: inline-block;
+    padding: 0px 20px;
+    a {
+      transition: all 0.3s ease 0s;
+      background-color: none;
+
+      &:hover{
+        cursor: pointer;
+        color: $link-hover-color;
+      }
+    }
+  }
+}
+//^nav bar
+
+//filter bar
+.filter-category{
+  margin: 30px 0;
+  width: 8vw;
+  
+  .filter-item{
+    display: block;
+    padding: 10px 10px;
+    text-align: center;
+    font: $filter-item-font;
+    transition: all 0.3s ease 0s;
+    &:hover{
+      cursor: pointer;
+      color: $link-hover-color;
+    }
+  }
+}
+//^filter bar
+
+//product list
+$product-img-width: 10vw;
+.product-list{
+  display: inline-flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  .product-img{
+    width: $product-img-width;
+    height: $product-img-width;
+    object-fit: cover;
+    margin: 10px;
+  }
+}
+//^product list
+
+// carousel
+input {
+  display: inline-block;
+  width: 5vw;
+  height: 5vw;
+  object-fit: cover;
+  padding: 5px;
+}
+.media-displayed {
+  width: auto;
+  height: 40vw;
+  object-fit: contain;
+}
+.banner-wrapper{
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-wrapper {
+  box-sizing: border-box;
+  height: 50vw;
+  width: 30vw;
+}
+//^ carousel
+
+//home page grid
+.grid{
+  display: grid;
+  grid-column: 10vw auto;
+  grid-template-areas: 
+    "r1c1 r1c2";
+}
+
+.r1c1{
+  grid-area: r1c1;
+  background-color: #3D3D42;
+  .homepage-filter{
+    display: flex;
+    width: 30px;
+    height: 50px;
+  }
+}
+
+.r1c2{
+  grid-area: r1c2;
+}
+//^home page grid
+
+
+//star rating
+
+fieldset, label {
+  margin: 0; padding: 0;
+}
+
+.rating {
+  border: none;
+  float: left;
+}
+
+.rating > input {
+  display: none;
+}
+
+.rating > label:before {
+  margin: 5px;
+  font-size: 2vw;
+  display: inline-block;
+  content: '★';
+}
+
+.rating > label {
+  color: #ddd;
+ float: right;
+}
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #FFED85;  }
+//^star rating
+
+
+//review page
+.review-wrapper, .textbox-wrapper{
+  display: inline-block;
+}
+
+.text-header{
+  font-size: 16px; /*default + 2px;*/
+  font-weight: bold;
+}
+//^ review page
+
+
+//carousel
+input {
+  display: inline-block;
+  width: 5vw;
+  height: 5vw;
+  object-fit: cover;
+  padding: 5px;
+}
+.media-displayed {
+  width: auto;
+  height: 40vw;
+  object-fit: contain;
+}
+.banner-wrapper{
+  display: flex;
+  /* box-sizing: border-box; */
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  /* width: 30vw;
+  height: 30vw; */
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-wrapper {
+  box-sizing: border-box;
+  height: 50vw;
+  width: 30vw;
+  /* border: 1px solid #DDD; */
+  // overflow: hidden;
+}
+//^carousel
+
+//Product page
+.product{
+  .grid{
+    display: grid;
+    grid-column: auto auto 30px auto;
+    grid-row: 30% auto auto;
+    grid-template-areas:
+      "r1c1 r1c2 r1cesrb r1c3"
+      "r2c1 r2c1 r2c1 r2c1"
+      "r3c1 r3c1 r3c1 r3c1";
+  }
+
+  .grid .r1c1 {
+    grid-area: r1c1;
+    border-bottom: 1px solid grey;
+  }
+  .grid .r1c2 {
+    grid-area: r1c2;
+    border-bottom: 1px solid grey;
+  }
+  .grid .r1c3 {
+    grid-area: r1c3;
+    border-bottom: 1px solid grey;
+  }
+  .grid .r1cesrb {
+    grid-area: r1cesrb;
+    border-bottom: 1px solid grey;
+  }
+  .grid .r1cesrb img {
+    width: 10vw;
+  }
+
+  .grid .r2c1 {
+    grid-area: r2c1;
+    display: inline-flex;
+    // justify-content:flex-start;
+
+    .game-cover{
+      width: 30vw;
+      object-fit: contain;
+      margin-right: 10px;
+      margin-bottom: auto;
+    }
+  }
+  .grid .r3c1 {
+    grid-area: r3c1;
+  }
+}
+//^Product page
