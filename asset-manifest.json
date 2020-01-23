@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/react-gamecheck/static/css/main.773ecfa9.chunk.css",
+    "main.js": "/react-gamecheck/static/js/main.a5ba6db3.chunk.js",
+    "main.js.map": "/react-gamecheck/static/js/main.a5ba6db3.chunk.js.map",
+    "runtime-main.js": "/react-gamecheck/static/js/runtime-main.fb903481.js",
+    "runtime-main.js.map": "/react-gamecheck/static/js/runtime-main.fb903481.js.map",
+    "static/js/2.d5fb4892.chunk.js": "/react-gamecheck/static/js/2.d5fb4892.chunk.js",
+    "static/js/2.d5fb4892.chunk.js.map": "/react-gamecheck/static/js/2.d5fb4892.chunk.js.map",
+    "index.html": "/react-gamecheck/index.html",
+    "precache-manifest.fc2df3d5198f593588ad58110843069b.js": "/react-gamecheck/precache-manifest.fc2df3d5198f593588ad58110843069b.js",
+    "service-worker.js": "/react-gamecheck/service-worker.js",
+    "static/css/main.773ecfa9.chunk.css.map": "/react-gamecheck/static/css/main.773ecfa9.chunk.css.map",
+    "static/js/2.d5fb4892.chunk.js.LICENSE": "/react-gamecheck/static/js/2.d5fb4892.chunk.js.LICENSE",
+    "static/media/Ps3_KingdomHearts.jpg": "/react-gamecheck/static/media/Ps3_KingdomHearts.ccf316a2.jpg",
+    "static/media/Ps4_DeathStranding.jpg": "/react-gamecheck/static/media/Ps4_DeathStranding.a94854e4.jpg",
+    "static/media/Ps4_FinalFantasy15.jpg": "/react-gamecheck/static/media/Ps4_FinalFantasy15.948e6b5d.jpg",
+    "static/media/Ps4_Persona5.jpg": "/react-gamecheck/static/media/Ps4_Persona5.6612a8e5.jpg",
+    "static/media/Switch_MarioKart8Deluxe.jpg": "/react-gamecheck/static/media/Switch_MarioKart8Deluxe.f8fcc1a9.jpg",
+    "static/media/bg.jpg": "/react-gamecheck/static/media/bg.49c32ec6.jpg",
+    "static/media/gc.png": "/react-gamecheck/static/media/gc.cff7079d.png",
+    "static/media/gradient-bg.jpg": "/react-gamecheck/static/media/gradient-bg.fe61b11d.jpg",
+    "static/media/p5-gp1.jpg": "/react-gamecheck/static/media/p5-gp1.f6a8e96e.jpg",
+    "static/media/p5-gp2.jpg": "/react-gamecheck/static/media/p5-gp2.9692bd09.jpg",
+    "static/media/p5-gp3.jpg": "/react-gamecheck/static/media/p5-gp3.a506fcb3.jpg",
+    "static/media/teen-esrb-rating.png": "/react-gamecheck/static/media/teen-esrb-rating.1b83beb3.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fb903481.js",
+    "static/js/2.d5fb4892.chunk.js",
+    "static/css/main.773ecfa9.chunk.css",
+    "static/js/main.a5ba6db3.chunk.js"
+  ]
+}
